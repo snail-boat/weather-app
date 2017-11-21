@@ -38,7 +38,7 @@ export function evaluate(expr, shortcuts, data) {
                     throw new Error(`Invalid binary operator "${expr.operator}"`)
             }
         case "UNNARY":
-            return !evaluate(expr.expresssion, shortcuts, data);
+            return !evaluate(expr.expression, shortcuts, data);
         case "PREDICATE":
             const left = getValue(expr.left.value, data);
             return evalPredicate(left, expr.op, expr.right.value);
