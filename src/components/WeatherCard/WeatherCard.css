@@ -1,0 +1,43 @@
+.WeatherCard-icon {
+    font-size: 64px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.WeatherIcon-metadata {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.WeatherIcon-metadataItem {
+    display: flex;
+    padding: 10px;
+}
+
+.WeatherIcon-metadataTitle {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.WeatherIcon-metadataValue {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.WeatherIcon-dayTemperature {
+    margin-left: 3px;
+    margin-right: 10px; 
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.WeatherIcon-nightTemperature {
+    margin-left: 3px;
+}
+
+.WeatherIcon-humidity {
+    margin-left: 3px;
+}

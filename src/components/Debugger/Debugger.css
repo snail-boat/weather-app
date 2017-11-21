@@ -1,0 +1,13 @@
+.Debugger-card {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.Debugger-tokens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Debugger-token {
+    margin: 10px;
+}
