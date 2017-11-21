@@ -1,7 +1,11 @@
 {
-  "name": "gluru",
+  "name": "weather-app",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snail-boat/weather-app.git"
+  },
   "dependencies": {
     "material-ui": "^1.0.0-beta.21",
     "material-ui-search-bar": "1.0.0-beta.3",
@@ -16,6 +20,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "gh-pages": "npm run build && gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
