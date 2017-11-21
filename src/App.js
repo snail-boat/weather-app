@@ -45,7 +45,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch(`http://api.openweathermap.org/data/2.5/box/city?bbox=0,-90,360,90,5&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/box/city?bbox=0,-90,360,90,5&appid=${apiKey}`)
       .then(res => res.json())
       .then(data => this.setState({ data: data.list }))
   }
@@ -58,8 +58,12 @@ class App extends Component {
     this.parseExpression(search);
   }
 
+  getUrl = (text) => {
+    return `${window.location.pathname}?q=${encodeURIComponent(text)}`;
+  }
+
   handleChange = (text) => {
-    window.history.replaceState(null, null, `/?q=${encodeURIComponent(text)}`)
+    window.history.replaceState(null, null, this.getUrl(text));
     this.setState({ search: text, });
   }
 
@@ -121,7 +125,7 @@ class App extends Component {
               {examples.map((example, i) => (
                 <li key={i}>
                   <Typography>
-                    <a onClick={this.handleExampleClick} href={`/?q=${encodeURIComponent(example)}`} className="App-example">
+                    <a onClick={this.handleExampleClick} href={this.getUrl(example)} className="App-example">
                       {example}
                     </a>
                   </Typography>
