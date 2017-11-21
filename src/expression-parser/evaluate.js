@@ -6,7 +6,7 @@ function getValue(prop, data) {
             return data.wind.speed;
         case "rain":
             return data.rain ? data.rain['3h'] : 0;
-        case "snowy":
+        case "snow":
             return data.snow ? data.snow['3h'] : 0;
         case "clouds":
             return data.clouds.today
