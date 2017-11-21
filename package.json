@@ -2,6 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://snail-boat.github.io/weather-app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/snail-boat/weather-app.git"
